@@ -9,6 +9,7 @@ import MyAppointments from '../src/pages/MyAppointments.jsx'
 import Appointment from '../src/pages/Appointment.jsx'
 import PageNotFound from '../src/pages/PageNotFound.jsx'
 import NavBar from './components/NavBar.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route exact path='/appointment/:docId' element={<Appointment/>}/>
           <Route path="*" element={<PageNotFound />}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   )
